@@ -21,8 +21,8 @@ const App = () => {
   const handleChange=(e)=>{
     const text = e.target.value.toLowerCase();
     setInput(text);
-    
-    const words=text.split("");
+
+    const words=text.split(" ");
     const result=words.map((word)=>emojiDictionary[word] || word).join(" ");
     setTranslated(result);
   }
