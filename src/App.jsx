@@ -27,11 +27,17 @@ const App = () => {
     setTranslated(result);
   }
   return (
+    
     <div className='App'>
-    <h1>😊 Emoji Translator</h1>
-    <input className='input' type="text" placeholder='Type : Happy, Love, Fire, Angry' value={input} onChange={handleChange}/>
-    <p>{translated}</p>
+      <div className='Box'>
+        <h1 className='text'>😊 Emoji Translator</h1>
+        <input className='input' type="text" placeholder='Type : Happy, Love, Fire, Angry' value={input} onChange={handleChange}/>
+        <p className='translated'> {translated}</p>
+      </div>
+    
     </div>
+    
+   
   )
 }
 
