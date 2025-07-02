@@ -12,7 +12,7 @@ const emojiDictionary={
   sleep: "😴",
   ok: "👌"
 }
-
+   
 const App = () => {
   
   const [input, setInput] = useState("")
